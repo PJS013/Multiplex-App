@@ -1,0 +1,48 @@
+#!/bin/sh
+
+echo "General get method"
+
+curl http://localhost:8080/
+
+sleep 1
+
+echo "\n\nGet data by date"
+
+curl http://localhost:8080/2022-04-28
+
+sleep 1
+
+echo "\n\nGet available seat numbers for a given movie"
+
+curl http://localhost:8080/available/1
+
+sleep 1
+
+echo "\n\nPost new movie object with initialization of empty array of seats"
+
+curl -d '{"movieName": "Locke", "roomNr": 1, "totalRows": 6, "totalColumns": 3, "screeningDateTime": "2022-04-29T13:12:01"}' -H "Content-Type: application/json" http://localhost:8080/create
+
+sleep 1
+
+echo "\n\nPut method for reservation of seats at movie with id 1"
+
+curl -X PUT -H "Content-Type: application/json" -d '[{"seatNr": 6, "price": "ADULT"}, {"seatNr": 7, "price": "ADULT"}]' -H "Content-Type: application/json" http://localhost:8080/seats/1/Piotr%20Siewiera
+
+sleep 1
+
+echo "\n\nDelete method of movie with given id"
+
+curl -X DELETE http://localhost:8080/2
+
+sleep 1
+
+echo "\n\nSimple put method for altering whole database entry at given id"
+
+curl -X PUT -H "Content-Type: application/json" -d '{"id":5,"movieName":"Scott Pilgrim","roomNr":1,"totalRows":3,"totalColumns":1,"seats":[true,true,true],"screeningDateTime":"2022-04-30T13:12:01"}' -H "Content-Type: application/json" http://localhost:8080/5
+
+sleep 1
+
+echo "\n\nSimple post method for initializing new movie object without initialization of seats"
+
+curl -d '{"movieName": "Nobody", "roomNr": 9, "totalRows": 6, "totalColumns": 3, "screeningDateTime": "2022-04-29T13:12:01"}' -H "Content-Type: application/json" http://localhost:8080/
+

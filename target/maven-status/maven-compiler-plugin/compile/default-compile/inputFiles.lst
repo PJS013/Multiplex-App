@@ -1,0 +1,10 @@
+/home/piotr/Downloads/MultiplexAPI-development/src/main/java/com/example/demo/MultiplexApplication.java
+/home/piotr/Downloads/MultiplexAPI-development/src/main/java/com/example/demo/service/MovieService.java
+/home/piotr/Downloads/MultiplexAPI-development/src/main/java/com/example/demo/repository/IMovieRepository.java
+/home/piotr/Downloads/MultiplexAPI-development/src/main/java/com/example/demo/entity/Movie.java
+/home/piotr/Downloads/MultiplexAPI-development/src/main/java/com/example/demo/entity/customSerializer.java
+/home/piotr/Downloads/MultiplexAPI-development/src/main/java/com/example/demo/entity/BookedSeat.java
+/home/piotr/Downloads/MultiplexAPI-development/src/main/java/com/example/demo/controller/MovieController.java
+/home/piotr/Downloads/MultiplexAPI-development/src/main/java/com/example/demo/entity/Booked.java
+/home/piotr/Downloads/MultiplexAPI-development/src/main/java/com/example/demo/entity/TicketType.java
+/home/piotr/Downloads/MultiplexAPI-development/src/main/java/com/example/demo/DataLoader.java
