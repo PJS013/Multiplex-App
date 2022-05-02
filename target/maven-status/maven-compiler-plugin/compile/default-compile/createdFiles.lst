@@ -1,0 +1,11 @@
+com/example/demo/entity/customSerializer.class
+com/example/demo/entity/Booked.class
+com/example/demo/MultiplexApplication.class
+com/example/demo/entity/TicketType.class
+com/example/demo/entity/BookedSeat.class
+com/example/demo/entity/Movie.class
+com/example/demo/controller/MovieController.class
+com/example/demo/DataLoader.class
+com/example/demo/service/MovieService$1.class
+com/example/demo/repository/IMovieRepository.class
+com/example/demo/service/MovieService.class
